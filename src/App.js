@@ -12,6 +12,8 @@ import PrivateRouter from "./components/router/PrivateRouter";
 import KeywordList from "./components/keyword/KeywordList";
 import Error from "./components/error/Error";
 import Register from "./components/auth/Register";
+import About from "./components/About";
+import Sentiment from "./components/Sentiment";
 function App() {
   const router = createBrowserRouter(
     createRoutesFromElements(
@@ -19,6 +21,8 @@ function App() {
         <Route element={<PrivateRouter />}>
           <Route index element={<KeywordList />} />
         </Route>
+        <Route path="about" element={<About />} />
+        <Route path="sentiment" element={<Sentiment />} />
         <Route path="signin" element={<Login />} />
         <Route path="register" element={<Register />} />
         <Route path="*" element={<Navigate to="/error" />} />

@@ -19,17 +19,5 @@ export const apiRequests = createApi({
     }),
   }),
 });
-//LOGIN_METHOD
-apiRequests.injectEndpoints({
-  endpoints: (builder) => ({
-    login: builder.mutation({
-      query: (payload) => ({
-        url: "auth/login",
-        method: "POST",
-        body: payload,
-      }),
-    }),
-  }),
-});
 
-export const { useGetTopicsQuery, useLoginMutation } = apiRequests;
+export const { useGetTopicsQuery } = apiRequests;

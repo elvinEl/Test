@@ -4,9 +4,9 @@ import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
 import { SyncLoader } from "react-spinners";
 import Button from "../button/Button";
 import Input from "../input/Input";
-import { useLoginMutation } from "../../redux/api/apiRequest";
 import { useNavigate } from "react-router-dom";
 import Cookies from "js-cookie";
+import { useLoginMutation } from "../../redux/api/auth";
 function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");

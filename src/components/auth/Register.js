@@ -6,7 +6,7 @@ import { SyncLoader } from "react-spinners";
 import InputMask from "react-input-mask";
 import Button from "../button/Button";
 import Input from "../input/Input";
-import { useRegisterMutation } from "../../redux/api/register";
+import { useRegisterMutation } from "../../redux/api/auth";
 function Register() {
   const [firstname, setFirstName] = useState("");
   const [lastname, setLastname] = useState("");
