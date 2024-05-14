@@ -1,5 +1,5 @@
 import React from "react";
-import { useGetTopicsQuery } from "../../redux/api/apiRequest";
+import { useGetTopicsQuery } from "../../redux/api/keywords";
 import { getToken } from "../auth/token/getToken";
 import Logout from "../auth/logout/Logout";
 import { NavLink } from "react-router-dom";

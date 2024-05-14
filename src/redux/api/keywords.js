@@ -33,13 +33,7 @@ keywordRequests.injectEndpoints({
         method: "PUT",
         body: payload,
       }),
-      prepareHeaders: (headers) => {
-        const token = getToken();
-        if (token) {
-          headers.set("Authorization", `Bearer ${token}`);
-        }
-        return headers;
-      },
+   
     }),
   }),
 });

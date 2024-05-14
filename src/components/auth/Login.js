@@ -110,12 +110,12 @@ function Login() {
                 required
                 autoComplete="current-password"
               />
-              <Button
+              <span
                 onClick={togglePasswordVisibility}
                 className="absolute top-1/2 right-2 transform -translate-y-1/2 text-[#6b7280]"
               >
                 {showPassword ? <AiOutlineEye /> : <AiOutlineEyeInvisible />}
-              </Button>
+              </span>
             </div>
             <div className="grid grid-cols-2">
               <div className="col-span-1">
