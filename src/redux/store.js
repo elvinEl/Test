@@ -4,6 +4,7 @@ import { censusRequests } from "./api/census";
 import { keywordRequests } from "./api/keywords";
 import { profileRequest } from "./api/profile";
 import { scheduleRequest } from "./api/scheduleReport";
+import { exportRequests } from "./api/exports";
 export const store = configureStore({
   reducer: {
     [authRequests.reducerPath]: authRequests.reducer,
@@ -11,6 +12,7 @@ export const store = configureStore({
     [keywordRequests.reducerPath]: keywordRequests.reducer,
     [profileRequest.reducerPath]: profileRequest.reducer,
     [scheduleRequest.reducerPath]: scheduleRequest.reducer,
+    [exportRequests.reducerPath]: exportRequests.reducer,
   },
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware().concat(
@@ -18,6 +20,7 @@ export const store = configureStore({
       censusRequests.middleware,
       keywordRequests.middleware,
       profileRequest.middleware,
-      scheduleRequest.middleware
+      scheduleRequest.middleware,
+      exportRequests.middleware
     ),
 });

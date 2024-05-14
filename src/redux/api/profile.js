@@ -39,7 +39,6 @@ profileRequest.injectEndpoints({
     }),
   }),
 });
-
 //PROFILE UPDATE//
 profileRequest.injectEndpoints({
   endpoints: (builder) => ({
